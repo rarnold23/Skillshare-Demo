@@ -1,0 +1,34 @@
+// USE BOURBON LIBRARY OF MIXINS
+// http://bourbon.io/docs/
+// custom mixins below
+
+
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+
+@mixin breakpoint($point) {
+	@if $point == small {
+		@media (min-width: 321px)  { @content; }
+	}
+	@if $point == medium {
+		@media (min-width: 768px) { @content; }
+	}
+	@if $point == large {
+ 		@media (min-width: 1024px) { @content; }
+	}
+	@if $point == retina {
+ 		@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { @content; }
+	}
+}
+
+
+
+// FONT SIZING (rem with fallback for IE)
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+@mixin font-size($size: 16){
+  font-size: $size + px;
+  font-size: $size / 16 + rem;
+}
+
+

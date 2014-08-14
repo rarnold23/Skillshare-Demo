@@ -1,0 +1,113 @@
+// TYPEFACES
+
+$sans: 'Source Sans Pro', 'sans-serif'; 
+
+
+
+// RESPONSIVE TYPOGRAPHY
+// http://css-tricks.com/rems-ems/
+
+html {
+    font-size: 80%;
+    line-height: 1.4;
+	@include breakpoint(medium) {font-size: 90%;}
+	@include breakpoint(large) {font-size: 100%;}
+}
+
+body {
+	font-family: $sans;
+    font-weight: 400;
+    color: $base3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	font-family: $sans;
+	font-weight: 700;
+	margin: 0;
+}
+
+h1 {
+	@include font-size(33);
+	line-height: 1;
+}
+h2 {
+	@include font-size(27);
+}	
+h3 {
+	@include font-size(22);
+}		
+h4 {
+	@include font-size(18);
+}		
+h5 {
+	@include font-size(16);
+}		
+h6 {
+	color: $base7;
+	@include font-size(12);
+}	
+
+
+
+p, li, dt, dd, label {
+	color: $base3;
+	font-family: $sans;
+	line-height: 1.6;
+	@include font-size(16);
+}
+
+p.lede {
+	@include font-size(18);
+}
+
+small {font-size: 85%;}
+
+ul, ol {
+    margin: 0 0 2.4em;
+    li {
+        margin-bottom: .8em;
+    }
+}
+
+
+b, strong {
+  font-weight: 700;
+}
+
+
+blockquote {
+    margin: 0;
+    padding: $padding 0;
+    font-style: italic;
+    text-align: center;
+    cite {
+        color: $base5;
+        white-space: nowrap;
+    }
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: Courier, 'Courier New', monospace;
+	@include font-size(15);
+}
+
+pre {
+    padding: 1em 1.5em;
+    margin: 1.8em 0;
+    display: block;
+    background: $base2;
+    color: $base0;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: $base8;
+	margin:2rem 0 4rem 0;
+}
+
+

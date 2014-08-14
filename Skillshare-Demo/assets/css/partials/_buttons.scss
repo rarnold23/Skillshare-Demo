@@ -1,0 +1,26 @@
+
+
+// LINKS
+
+a {
+    color: $anchor; 
+    text-decoration: none; 
+    cursor: pointer;     
+    @include transition (all 0.25s ease);
+}
+a:link 		{color: $anchor;}  // unvisited  
+a:visited 	{color: $anchor;}  // visited  
+a:hover 	{color: $anchor-alt;}  // mouseover  
+a:active 	{color: $anchor;}  // selected  
+
+
+
+.logo {
+    display: inline-block;
+    padding: $padding;
+}
+
+// BUTTONS
+// form buttons are in _forms
+
+

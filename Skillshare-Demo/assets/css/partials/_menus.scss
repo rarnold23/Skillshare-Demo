@@ -1,0 +1,38 @@
+// MENUS 
+
+// base styles first
+nav {
+    
+}
+
+// then modular
+.nav-sub {
+    ul {
+        margin: 0;
+        padding: 0;
+        background: $base;
+    }
+    li {
+        @include font-size(14); 
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        margin: 0 1px 0 0;
+        @include breakpoint(medium) {display: block; margin: 0 0 1px 0; text-align: left;}
+    }
+    li a {
+        display: block;
+        padding: 10px 20px;
+        color: $base0;
+    }
+    li a:hover {
+        background: $base4;
+    }
+}
+
+// then page-specific
+.welcome-nav {
+    background: $base3;
+}
+
+

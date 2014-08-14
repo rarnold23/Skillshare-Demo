@@ -1,0 +1,61 @@
+// THEME CONFIGURATION
+
+
+// COLOR PALETTE
+
+$base: #000;
+$base1: lighten($base, 10%);
+$base2: lighten($base, 20%);
+$base3: lighten($base, 30%);
+$base4: lighten($base, 40%);
+$base5: lighten($base, 50%);
+$base6: lighten($base, 60%);
+$base7: lighten($base, 70%);
+$base8: lighten($base, 80%);
+$base9: lighten($base, 90%);
+$base0: lighten($base, 100%);
+
+$blue:      #0198E1;
+$navy:      #236B8E;
+$red:       #CC0000;
+$brick:     #990000;
+
+
+
+// COLOR VARIABLES
+// Using color variables properly (ht @bones)
+// http://sachagreif.com/sass-color-variables/
+
+$bg:            $base9;
+$bg-alt:        $base1;
+$anchor:        $blue;
+$anchor-alt:    $navy;
+$loud:          $red;
+$loud-alt:      $brick;
+
+
+// GRID 
+// Bourbon Neat variables 
+
+$grid-columns: 12;
+
+
+
+// LAYERS
+// so useful for absolute positioning
+
+$layer1: 1; // content
+$layer2: 2; // hovers
+$layer3: 3; // cloak
+$layer4: 4; // lightbox
+$layer5: 5; // lightbox content
+
+
+
+// SPACING
+// keep some common variables standard
+
+$padding: 20px;
+
+
+
